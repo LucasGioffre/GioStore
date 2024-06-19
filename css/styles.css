@@ -11,6 +11,8 @@ body {
     background-color: #f4f4f4;
 }
 
+/*---------INDEX---------*/
+
 /*Ajustamos el espacio entre el contenido y color de fondo*/
 .nav-bar-1 {
     background-color: black;
@@ -436,6 +438,41 @@ footer i {
 
 .img18 {
     grid-area: item18;
+}
+
+@media screen and (max-width: 500px) {
+    .img-marcas-container {
+        grid-template-columns: 1 100px;
+        grid-template-rows: 1 100px;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12"
+        "item13"
+        "item14"
+        "item15"
+        "item16"
+        "item17"
+        "item18"
+    }
+
+    .search-content {
+        display: none;
+    }
+
+    .search-button {
+        position: relative;
+        left: 120px;
+    }
 }
 
 /*----------PAGINA CONTACTO---------*/
