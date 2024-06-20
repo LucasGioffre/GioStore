@@ -13,94 +13,47 @@ body {
 
 /*---------INDEX---------*/
 
-/*Ajustamos el espacio entre el contenido y color de fondo*/
-.nav-bar-1 {
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /*Tamaño del logo*/
 .logo {
     width: 200px;
     margin: 5px;
 }
 
-/*Establecemos el flex en el campo de busqueda y el boton del mismo*/
-.search-container {
-    display: flex;
-    margin-right: 100px;
+/*Quito padding del navbar*/
+.navbar {
+    padding: 0;
 }
 
-/*Posicionamiento y estilo del campo de busqueda*/
-.search-content {
-    display: flex;
-    align-self: center;
-    width: 450px;
-    padding: 5px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 20px;
-}
-
-/*Estilo del boton de busqueda*/
-.search-button {
-    border: none;
-    padding: 5px;
-    border-radius: 5px;
-}
-
-/*Establecemos el flex en el boton de iniciar sesion*/
-.btn-login {
-    display: flex;
-    margin-right: 20px;
-}
-
-/*Color de fondo del nav bar*/
-.nav-bar-2 {
+/*Aplico un fondo y agrego paddin en la parte de abajo cuando el navbar sea responsive*/
+.container-fluid {
     background-color: black;
-    padding: 7px;
-}
-
-/*Agrego padding abajo de los botones para generar mas espacio entre el banner*/
-.navbar-container {
     padding-bottom: 10px;
 }
 
-/*Establecemos el flex y posicionamos el contenido del nav bar*/
-.nav-bar-2 nav .btns-navbar {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 100px;
+/*Aplico color blanco a los links del navbar*/
+.nav-link {
+    color: white;
 }
 
-/*Quitamos los puntos de las listas*/
-.nav-bar-2 nav .btns-navbar li {
-    list-style-type: none;
+/*Aplico hover para que cambien a color rojo los links del navbar al darle ckick*/
+.nav-link:hover {
+    color: #d42020;
 }
 
-/*Estilo de los botones del nav bar*/
-.nav-bar-2 a {
-    padding: 2px 10px;
-    text-decoration: none;
-    color: aliceblue;
-    border: none;
-    border-radius: 20px;
+/*Aplico color y estilo de borde al boton de busqueda del navbar*/
+.btn {
+    color: #d42020;
+    border: 1px solid #d42020;
+}
+
+/*Aplico hover al boton de busqueda del navbar*/
+.btn:hover {
+    color: white;
     background-color: #d42020;
+    border: #d42020;
 }
 
-.dropdown-menu {
-    background-color: rgb(190, 190, 190);
-}
-
-.dropdown-menu a {
-    background-color: rgb(190, 190, 190);
-    color: black;
-    margin: 4px 0;
-    border-radius: 1px;
-}
-
+/*Aplico hover al dropdown de categorias*/
 .dropdown-menu a:hover {
     background-color: #d42020;
     color: white;

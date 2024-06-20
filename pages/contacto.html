@@ -10,42 +10,52 @@
 </head>
 <body>
     <header>
-        <section class="nav-bar-1">
-            <a href="../index.html">
-                <img id="logo" class="logo" src="../assets/img/giostore-logo-blanco.png" alt="Logo">
-            </a>
-            <div class="search-container">
-                <input class="search-content" type="text" placeholder="Buscar...">
-                <input class="search-button" type="image" src="../assets/img/search-logo.svg" value="Buscar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img id="logo" class="logo" src="../assets/img/giostore-logo-blanco.png" alt="logo">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <div class="dropdown">
+                                <a class="btn-secondary dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Guitarras</a></li>
+                                    <li><a class="dropdown-item" href="#">Bajos</a></li>
+                                    <li><a class="dropdown-item" href="#">Baterias</a></li>
+                                    <li><a class="dropdown-item" href="#">Pianos</a></li>
+                                    <li><a class="dropdown-item" href="#">Teclados</a></li>
+                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
+                                    <li><a class="dropdown-item" href="#">Instrumentos de Viento</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/marcas.html">Marcas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/envios.html">Envio</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-            <input class="btn-login" type="image" src="../assets/img/login.svg" value="Iniciar Sesion">
-        </section>
-        <section class="nav-bar-2">
-            <nav class="navbar-container">
-                <ul class="btns-navbar">
-                    <li>
-                        <div class="dropdown">
-                            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                              Categorias
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Guitarras</a></li>
-                                <li><a class="dropdown-item" href="#">Bajos</a></li>
-                                <li><a class="dropdown-item" href="#">Baterias</a></li>
-                                <li><a class="dropdown-item" href="#">Pianos</a></li>
-                                <li><a class="dropdown-item" href="#">Teclados</a></li>
-                                <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                <li><a class="dropdown-item" href="#">Instrumentos de Viento</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="./marcas.html">Marcas</a></li>
-                    <li><a href="./nosotros.html">Nosotros</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./envios.html">Envios</a></li>
-                </ul>
-            </nav>
-        </section>
+        </nav>
     </header>
     <main>
         <p class="btn-inicio"><a href="../index.html">Inicio</a> / Contacto</p>
