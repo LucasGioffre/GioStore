@@ -65,15 +65,18 @@ body {
     height: 400px;
 }
 
-/*Activo flex y separo el contenido del contenedor de info*/
+/*Aplico grid y estilos a la seccion de info*/
 .info-container {
+    display: grid;
+    grid-template-columns: repeat(3 350px);
+    grid-template-rows: 1 250px;
+    grid-template-areas:
+    "info1 info2 info3";
     background-color: #a2a2a2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     border-radius: 10px;
-    margin: 20px;
-    padding: 10px 50px;
+    margin: 10px;
+    padding: 10px;
+    gap: 30px;
 }
 
 /*Activo flex y acomodo el contenido del contenedor de garantia*/
@@ -82,6 +85,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    grid-area: info1;
 }
 
 /*Ajusto el tamaño de la imagen del contenedor de garantia*/
@@ -95,11 +99,12 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    grid-area: info2;
 }
 
 /*Ajusto el tamaño de la imagen del contenedor de delivery*/
-.delivery-container img {
-    width: 70px;
+.delivery-container i {
+    font-size: 50px;
 }
 
 /*Activo flex y acomodo el contenido del contenedor de cuotas*/
@@ -108,6 +113,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    grid-area: info3;
 }
 
 /*Aplico flex a las imagenes de la seccion cuotas en info*/
@@ -191,13 +197,15 @@ h1 {
     width: 50px;
 }
 
-/*Activo flex y wrap, color de fondo y posicionamiento del footer*/
+/*Aplico grid y estilos al footer*/
 footer {
+    display: grid;
+    grid-template-columns: repeat(3 350px);
+    grid-template-rows: 1 250px;
+    grid-template-areas:
+    "footer1 footer2 footer3";
     background-color: #c0c0c0;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
 }
 
 /*Tamaño de las imagenes que se encuentren en el footer*/
@@ -210,6 +218,7 @@ footer i {
     display: flex;
     flex-direction: column;
     margin: 5px 0;
+    grid-area: footer1;
 }
 
 /*aplico margen al parrafo del contenedor de redes sociales*/
@@ -233,6 +242,7 @@ footer i {
 .copyright-container {
     display: flex;
     flex-direction: column;
+    grid-area: footer2;
 }
 
 /*Aplico margen al parrafo del contenedor de copyright*/
@@ -254,6 +264,7 @@ footer i {
     flex-direction: column;
     margin: 0 20px;
     padding: 10px;
+    grid-area: footer3;
 }
 
 /*Aplico margen al parrafo "contacto" del contenedor de contacto*/
@@ -391,41 +402,6 @@ footer i {
 
 .img18 {
     grid-area: item18;
-}
-
-@media screen and (max-width: 500px) {
-    .img-marcas-container {
-        grid-template-columns: 1 100px;
-        grid-template-rows: 1 100px;
-        grid-template-areas:
-        "item1"
-        "item2"
-        "item3"
-        "item4"
-        "item5"
-        "item6"
-        "item7"
-        "item8"
-        "item9"
-        "item10"
-        "item11"
-        "item12"
-        "item13"
-        "item14"
-        "item15"
-        "item16"
-        "item17"
-        "item18"
-    }
-
-    .search-content {
-        display: none;
-    }
-
-    .search-button {
-        position: relative;
-        left: 120px;
-    }
 }
 
 /*----------PAGINA CONTACTO---------*/
@@ -612,4 +588,109 @@ form input, textarea {
     margin-left: 10px;
     margin-top: 10px;
     font-size: 22px;
+}
+
+
+/*------MEDIA QUERY-------*/
+
+@media screen and (max-width: 500px) {
+
+    /*-------PAGINA INDEX---------*/
+    .w-100 {
+        width: 100%;
+        height: 200px;
+    }
+
+    .info-container {
+        grid-template-columns: 1 100px;
+        grid-template-rows: repeat(3 100px);
+        grid-template-areas:
+        "info1"
+        "info2"
+        "info3";
+    }
+
+    .novedades-container {
+        grid-template-columns: repeat(2 50px);
+        grid-template-rows: repeat(4 150px);
+        grid-template-areas:
+        "prod1 prod2"
+        "prod3 prod4"
+        "prod5 prod6"
+        "prod7 prod8";
+    }
+
+    footer {
+        grid-template-columns: 1 100px;
+        grid-template-rows: 3 150px;
+        grid-template-areas:
+        "footer1"
+        "footer3"
+        "footer2";
+        justify-content: center;
+    }
+
+    .redsocial-container p {
+        margin-left: 83px;
+    }
+
+    .img-red-social {
+        display: flex;
+        flex-direction: row;
+        margin-left: 13%;
+    }
+
+    .contacto-item1 {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-item2 {
+        margin-left: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto-item3 {
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    /*-------PAGINA MARCAS--------*/
+
+    .img-marcas-container {
+        grid-template-columns: 1 100px;
+        grid-template-rows: 1 100px;
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12"
+        "item13"
+        "item14"
+        "item15"
+        "item16"
+        "item17"
+        "item18"
+    }
+
+    .search-content {
+        display: none;
+    }
+
+    .search-button {
+        position: relative;
+        left: 120px;
+    }
 }
