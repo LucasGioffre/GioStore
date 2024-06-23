@@ -181,6 +181,10 @@ h1 {
     color: aliceblue;
 }
 
+.prod-novedad button:hover {
+    background-color: #d66b6b;
+}
+
 
 /*Aplico la posicion fixed en el contenedor del logo de whatsapp*/
 .whatsapp-container {
@@ -558,6 +562,10 @@ form input, textarea {
     color: aliceblue;
     padding: 5px 10px;
     margin-left: 350px;
+}
+
+.btn-enviar:hover {
+    background-color: #d66b6b;
 }
 
 /*------------NOSOTROS------------*/
