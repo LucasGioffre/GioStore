@@ -1,0 +1,71 @@
+/*Aplico grid y estilos al footer*/
+footer {
+    @include grid (repeat(3 350px), 1 250px, inherit, space-between, inherit);
+    grid-template-areas:
+    "footer1 footer2 footer3";
+    background-color: $color-footer;
+
+    i {
+        color: $color-negro;
+    }
+}
+
+/*Activo flex en el contenedor de la info de redes sociales*/
+.redsocial-container {
+    @include flexbox(column, flex-start, inherit, inherit);
+    margin: 5px 0;
+    grid-area: footer1;
+
+    p {
+        margin-left: 50px;
+    }
+
+    .img-red-social {
+        a {
+            text-decoration: none;
+            padding: 0 15px;
+        }
+    }
+}
+
+/*Aplico margen a las imagenes del contendor de redes sociales*/
+.fa-brands {
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+/*Activo flex en contenedor de copyright*/
+.copyright-container {
+    @include flexbox (column, flex-start, inherit, inherit);
+    grid-area: footer2;
+
+    //Aplico margen al parrafo del contenedor de copyright//
+    .parrafo-1 {
+        margin-left: 105px;
+    }
+
+    //Aplico flex, posiciono y decoro el link "volver arriba"//
+    a {
+        @include flexbox (row, center, inherit, inherit);
+        color: $color-negro;
+        text-decoration: none;
+    }
+}
+
+//Activo flex, margen y padding al contenedor de contacto//
+.contacto-container {
+    @include flexbox (column, flex-start, inherit, inherit);
+    margin: 0 20px;
+    padding: 10px;
+    grid-area: footer3;
+
+    //Aplico margen al parrafo "contacto" del contenedor de contacto//
+    .contacto-item1 {
+        margin-left: 50px;
+    }
+
+    //Aplico margen al parrafo "numero de telefono" del contenedor de contacto//
+    .contacto-item2 {
+        margin-left: 25px;
+    }
+}

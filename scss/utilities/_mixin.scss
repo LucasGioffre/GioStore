@@ -1,0 +1,16 @@
+@mixin flexbox ($flex-direct, $just-content, $align-items, $flex-wrap) {
+    display: flex;
+    flex-direction: $flex-direct;
+    justify-content: $just-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+}
+
+@mixin grid ($grid-columns, $grid-rows, $gap, $just-content, $align-items) {
+    display: grid;
+    grid-template-columns: $grid-columns;
+    grid-template-rows: $grid-rows;
+    gap: $gap;
+    justify-content: $just-content;
+    align-items: $align-items;
+}

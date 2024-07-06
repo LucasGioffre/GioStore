@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Hind+Siliguri:wght@300;400;500;600;700&family=Wix+Madefor+Display:wght@400..800&display=swap');
+
+@import "./utilities/variable";
+@import "./utilities/globals";
+@import "./utilities/mixin";
+@import "./components/header";
+@import "./components/footer";
+@import "./pages/main_index";
+@import "./pages/main_contacto";
+@import "./pages/main_envios";
+@import "./pages/main_marcas";
+@import "./pages/main_nosotros";
+
+
+@import "./utilities/mediaQueries";

@@ -1,0 +1,175 @@
+/*Activo grid y declaro la estructura y medidas*/
+.contact-container {
+    @include grid (1fr 1fr, (0,50fr 0,50fr 1fr 1fr), inherit, inherit, inherit);
+    margin-top: 25px;
+
+    //Declaro posicion y activo grid y ajusto el contenido//
+    .telefonos {
+        @include flexbox (column, flex-start, inherit, inherit);
+        grid-column: 1/2;
+        grid-row: 1/2;
+        justify-items: center;
+        margin-left: 20px;
+
+        //Tamaño de los titulos//
+        h2 {
+            font-size: 25px;
+        }
+
+        //Activo flex y separo el icono de whatsapp//
+        .tel-whatsapp {
+            display: flex;
+            margin-bottom: 10px;
+
+            //Separo el icono del numero//
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        //Activo flex//
+        .tel-comun {
+            display: flex;
+
+            //Separo el icono del borde de la pantalla y del numero//
+            i {
+                margin-left: 15px;
+                margin-right: 8px;
+            }
+        }
+
+        //Cambio el tamaño de los iconos//
+        i {
+            font-size: 20px;
+        }
+    }
+    
+    //Declaro la posicion del contenedor y activo flex para posicionar el contenido//
+    .email {
+        @include flexbox (column, flex-start, inherit, inherit);
+        grid-column: 1/2;
+        grid-row: 2/3;
+        margin-left: 20px;
+
+        //Tamaño de los titulos//
+        h2 {
+            font-size: 25px;
+        }
+
+        //Activo flex y acomodo el contenido//
+        .icon-email {
+            @include flexbox (row, inherit, center, inherit);
+            margin-left: 15px;
+        }
+
+        //Ajusto el tamaño del icono de email y lo separo del texto//
+        i {
+            font-size: 20px;
+            margin-right: 10px;
+            margin-bottom: 15px;
+        }
+    }
+
+    //Declaro la ubicacion del contenedor de ubicacion//
+    .ubicacion {
+        grid-column: 2/3;
+        grid-row: 1/3;
+
+        //Tamaño de los titulos//
+        h2 {
+            font-size: 25px;
+        }
+    }
+
+    //Declaro la ubicacion del contenedor de consulta y activo flex y acomodo el contenido//
+    .consulta {
+        @include flexbox (column, flex-start, inherit, inherit);
+        grid-column: 1/3;
+        grid-row: 3/4;
+        margin-left: 20px;
+
+        //Tamaño de los titulos//
+        h2 {
+            font-size: 25px;
+        }
+
+        form {
+
+            //Activo flex y acomodo el contenido//
+            .nombre-form {
+                @include flexbox (row, flex-start, center, inherit);
+                margin: 10px 0;
+
+                //aplico margen derecho//
+                label {
+                    margin-right: 10px;
+                }
+
+                input {
+                    border: 1px solid $color-rojo;
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+            }
+
+            //Activo flex y acomodo el contenido//
+            .email-form {
+                @include flexbox (row, inherit, center, inherit);
+                margin: 10px 0;
+
+                //Aplico margen derecho//
+                label {
+                    margin-right: 30px;
+                }
+
+                input {
+                    border: 1px solid $color-rojo;
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+            }
+
+            //Activo flex y acomodo el contenido//
+            .mensaje-form {
+                @include flexbox (row, inherit, center, inherit);
+                margin: 10px 0;
+
+                //Aplico margen derecho//
+                label {
+                    margin-right: 15px;
+                }
+
+                input {
+                    border: 1px solid $color-rojo;
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+
+                //Declaro las medidas al textarea y lo dejo fijo//
+                textarea {
+                    width: 600px;
+                    height: 150px;
+                    resize: none;
+                    border: 1px solid $color-rojo;
+                    border-radius: 20px;
+                    padding: 5px;
+                }
+            }
+
+            //Activo flex y aplico estilos al boton "enviar" del form//
+            .btn-enviar {
+                display: flex;
+                border: none;
+                background-color: $color-rojo;
+                color: $color-blanco;
+                padding: 5px 10px;
+                margin-left: 350px;
+                border-radius: 20px;
+
+                &:hover {
+                    background-color: $color-boton-hover;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,154 @@
+@media screen and (max-width: 500px) {
+
+    /*-------PAGINA INDEX---------*/
+
+    .w-100 {
+        width: 100%;
+        height: 250px;
+    }
+
+    .info-container {
+        @include grid (1 100px, repeat(3 100px), inherit, inherit, inherit);
+        grid-template-areas:
+        "info1"
+        "info2"
+        "info3";
+    }
+
+    .novedades-container {
+        @include grid (repeat(2 50px), repeat(4 150px), inherit, inherit, inherit);
+        grid-template-areas:
+        "prod1 prod2"
+        "prod3 prod4"
+        "prod5 prod6"
+        "prod7 prod8";
+    }
+
+    footer {
+        @include grid (1 100px, 3 150px, inherit, center, inherit);
+        grid-template-areas:
+        "footer1"
+        "footer3"
+        "footer2";
+
+        .redsocial-container {
+            p {
+                margin-left: 83px;
+            }
+        }
+
+        .img-red-social {
+            @include flexbox (row, inherit, inherit, inherit);
+            margin-left: 13%;
+        }
+
+        .contacto-container {
+            .contacto-item1 {
+                @include flexbox (row, center, inherit, inherit);
+                margin-left: 0;
+            }
+
+            .contacto-item2 {
+                @include flexbox (row, center, inherit, inherit);
+                margin-left: 0;
+            }
+
+            .contacto-item3 {
+                @include flexbox (row, center, inherit, inherit);
+            }
+        }
+    }
+
+    /*-------PAGINA MARCAS--------*/
+
+    .img-marcas-container {
+        @include grid (1 100px, 1 100px, 10px, center, inherit);
+        grid-template-areas:
+        "item1"
+        "item2"
+        "item3"
+        "item4"
+        "item5"
+        "item6"
+        "item7"
+        "item8"
+        "item9"
+        "item10"
+        "item11"
+        "item12"
+        "item13"
+        "item14"
+        "item15"
+        "item16"
+        "item17"
+        "item18"
+    }
+
+    /*---------PAGINA NOSOTROS---------*/
+
+    .parrafo-nosotros {
+        text-align: justify;
+        margin: 30px 20px;
+    }
+
+    /*--------PAGINA CONTACTO--------*/
+
+    .contact-container {
+        @include grid (100%, 150px 100px 300px 350px, inherit, inherit, inherit);
+        /* grid-template-columns: 100%;
+        grid-template-rows: 150px 100px 300px 350px; */
+
+        .telefonos {
+            grid-column: 1/1;
+            grid-row: 1/4;
+        }
+
+        .email {
+            grid-column: 1/1;
+            grid-row: 2/4;
+        }
+
+        .ubicacion {
+            grid-column: 1/1;
+            grid-row: 3/4;
+            margin: 0 20px;
+
+            iframe {
+                width: 100%;
+                height: 230px;
+            }
+        }
+
+        .consulta {
+            grid-column: 1/1;
+            grid-row: 4/4;
+
+            form {
+                .mensaje-form {
+                    margin-right: 20px;
+                }
+
+                .btn-enviar {
+                    margin-left: 50%;
+                }
+            }
+        }
+    }
+
+    /*------PAGINA ENVIOS-------*/
+
+    .titulo-envios {
+        text-align: center;
+    }
+
+    .envios-container {
+        p {
+            margin-right: 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-right: 10px;
+        }
+    }
+}

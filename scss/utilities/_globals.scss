@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+body {
+    background-color: $color-fondo-paginas;
+}
+
+/*Aplico margen al boton de inicio de cada pagina*/
+.btn-inicio {
+    margin-left: 10px;
+    margin-top: 10px;
+
+    //Aplico color al boton de inicio//
+    a {
+        color: $color-negro;
+    }
+}
+
+/*Aplico la posicion fixed en el contenedor del logo de whatsapp*/
+.whatsapp-container {
+    position: sticky;
+    bottom: 10px;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    img {
+        width: 50px;
+    }
+}

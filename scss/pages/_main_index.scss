@@ -1,0 +1,103 @@
+/*Le aplico tamaño a las imagenes de los banners*/
+.w-100 {
+    width: 100%;
+    height: 400px;
+}
+
+/*Aplico grid y estilos a la seccion de info*/
+.info-container {
+    @include grid (repeat(3 350px), 1 250px, 30px, inherit, inherit);
+    grid-template-areas:
+    "info1 info2 info3";
+    background-color: #a2a2a2;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    //Activo flex y acomodo el contenido del contenedor de garantia//
+    .garantia-container {
+        @include flexbox (column, flex-start, center, inherit);
+        grid-area: info1;
+
+        //Ajusto el tamaño de la imagen del contenedor de garantia//
+        img {
+            width: 70px;
+        }
+    }
+
+    //Activo flex y acomodo el contenido del contenedor de delivery//
+    .delivery-container {
+        @include flexbox (column, flex-start, center, inherit);
+        grid-area: info2;
+
+        //Ajusto el tamaño de la imagen del contenedor de delivery//
+        i {
+            font-size: 50px;
+        }
+    }
+
+    //Activo flex y acomodo el contenido del contenedor de cuotas//
+    .cuotas-container {
+        @include flexbox (column, flex-start, center, inherit);
+        grid-area: info3;
+
+        //Aplico flex a las imagenes de la seccion cuotas en info//
+        .img-cuotas {
+            display: flex;
+
+            //Aplico tamaño a las tarjetas de la seccion cuotas//
+            .tarjetas {
+                width: 150px;
+                height: 50px;
+            }
+        }
+    }
+}
+
+/*Aplico flex y centro el titulo "novedades"*/
+h1 {
+    @include flexbox (row, center, inherit, inherit);
+}
+
+/*Aplico grid y declaro la posicion de los productos de novevades*/
+.novedades-container {
+    @include grid (repeat(5 250px), repeat(3 350px), 5px, center, stretch);
+    grid-template-areas:
+    "prod1 prod2 prod3 prod4 prod5"
+    "prod6 prod7 prod8 prod9 prod10"
+    "prod11 prod12 prod13 prod14 prod15";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .prod-novedad {
+        @include flexbox (column, space-between, center, inherit);
+        background-color: $color-blanco;
+        border: 1px solid $color-gris;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos de novedades//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos de novedades//
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards de novedades//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+ }

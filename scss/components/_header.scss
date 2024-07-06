@@ -1,0 +1,49 @@
+/*Tamaño del logo*/
+.logo {
+    width: 200px;
+    margin: 5px;
+}
+
+/*Quito padding del navbar*/
+.navbar {
+    padding: 0;
+}
+
+/*Aplico un fondo y agrego paddin en la parte de abajo cuando el navbar sea responsive*/
+.container-fluid {
+    background-color: $color-negro;
+    padding-bottom: 10px;
+}
+
+/*Aplico color blanco a los links del navbar*/
+.nav-link {
+    color: $color-blanco;
+
+    &:hover {
+        color: $color-rojo;
+    }
+}
+
+/*Aplico color y estilo de borde al boton de busqueda del navbar*/
+.btn {
+    color: $color-rojo;
+    border: 1px solid $color-rojo;
+
+    &:hover {
+        color: $color-blanco;
+        background-color: $color-rojo;
+        border: $color-rojo;
+    }
+}
+
+/*Aplico hover al dropdown de categorias*/
+.dropdown-menu {
+    li {
+        a {
+            &:hover {
+                background-color: $color-rojo;
+                color: $color-blanco;
+            }
+        }
+    }
+}

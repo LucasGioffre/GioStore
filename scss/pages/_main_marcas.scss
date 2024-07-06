@@ -1,0 +1,107 @@
+/*Aplico flex y centro el titulo*/
+.titulo-marcas {
+    @include flexbox (row, center, inherit, inherit);
+}
+
+/*Aplico grid y declaro las filas, columnas y posiciones*/
+.img-marcas-container {
+    @include grid (repeat(6 150px), repeat(3 150px), 10px, center, center);
+    margin-bottom: 10px;
+    grid-template-areas:
+    "item1 item2 item3 item4 item5 item6"
+    "item7 item8 item9 item10 item11 item12"
+    "item13 item14 item15 item16 item17 item18";
+
+    //Aplico flex y estilo a los contenedores de las marcas//
+    .img-marcas {
+        @include flexbox (column, inherit, inherit, inherit);
+        background-color: $color-blanco;
+        padding: 10px;
+        border: 1px solid $color-gris;
+        border-radius: 20px;
+
+        //Tamaño de las imagenes de cada marca//
+        img {
+            width: 150px;
+            height: 100px;
+        }
+
+        //Aplico flex a cada titulo de cada marca//
+        p {
+            @include flexbox (row, center, inherit, inherit);
+        }
+    }
+
+    //de "img1" a "img17" les aplico la posicion a cada contenedor de cada marca//
+    .img1 {
+        grid-area: item1;
+    }
+    
+    .img2 {
+        grid-area: item2;
+    }
+    
+    .img3 {
+        grid-area: item3;
+    }
+    
+    .img4 {
+        grid-area: item4;
+    }
+    
+    .img5 {
+        grid-area: item5;
+    }
+    
+    .img6 {
+        grid-area: item6;
+    }
+    
+    .img7 {
+        grid-area: item7;
+    }
+    
+    .img8 {
+        grid-area: item8;
+    }
+    
+    .img9 {
+        grid-area: item9;
+    }
+    
+    .img10 {
+        grid-area: item10;
+    }
+    
+    .img11 {
+        grid-area: item11;
+    }
+    
+    .img12 {
+        grid-area: item12;
+    }
+    
+    .img13 {
+        grid-area: item13;
+    }
+    
+    .img14 {
+        grid-area: item14;
+    }
+    
+    .img15 {
+        grid-area: item15;
+    }
+    
+    .img16 {
+        grid-area: item16;
+    }
+    
+    .img17 {
+        grid-area: item17;
+    }
+    
+    .img18 {
+        grid-area: item18;
+    }
+}
