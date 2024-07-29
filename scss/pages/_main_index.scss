@@ -1,5 +1,5 @@
 /*Le aplico tamaño a las imagenes de los banners*/
-.w-100 {
+.w-banner {
     width: 100%;
     height: 400px;
 }
@@ -59,13 +59,25 @@ h1 {
     @include flexbox (row, center, inherit, inherit);
 }
 
+/*Aplico flex y margen al titulo de Categorias*/
+.titulo-categorias {
+    @include flexbox (row, center, inherit, inherit);
+    margin-top: 20px;
+}
+
+/*Aplico flex y margen a los subtitulos de la seccion de Categorias*/
+.subtitulo-categorias {
+    @include flexbox (row, flex-start, inherit, inherit);
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
 /*Aplico grid y declaro la posicion de los productos de novevades*/
 .novedades-container {
-    @include grid (repeat(5 250px), repeat(3 350px), 5px, center, stretch);
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "prod1 prod2 prod3 prod4 prod5"
-    "prod6 prod7 prod8 prod9 prod10"
-    "prod11 prod12 prod13 prod14 prod15";
+    "prod6 prod7 prod8 prod9";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .prod-novedad {
@@ -101,3 +113,254 @@ h1 {
         }
     }
  }
+
+ /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de guitarras*/
+ .guitarras-container {
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
+    grid-template-areas:
+    "guitar1 guitar2 guitar3 guitar4 guitar5"
+    "guitar6 guitar7";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .prod-guitarras {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+    
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de bajos*/
+.bajos-container {
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
+    grid-template-areas:
+    "bajo1 bajo2 bajo3 bajo4 bajo5"
+    "bajo6 bajo7";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .prod-bajos {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de baterias*/
+.baterias-container {
+    @include grid (repeat(5, 250px), 350px, 5px, center, stretch);
+    grid-template-areas:
+    "bat1 bat2 bat3 bat4 bat5";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .prod-baterias {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de pianos y teclados*/
+.pianos-container {
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
+    grid-template-areas:
+    "piano1 piano2 piano3 piano4 piano5"
+    "piano6";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .prod-piano {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de accesorios*/
+.accesorios-container {
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
+    grid-template-areas:
+    "acces1 acces2 acces3 acces4 acces5"
+    "acces6 acces7";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .acces-prod {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de instrumentos de viento*/
+.viento-container {
+    @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
+    grid-template-areas:
+    "viento1 viento2 viento3 viento4 viento6"
+    "viento6";
+
+    //Aplico flex y establezco el estilo de cada card de productos//
+    .viento-prod {
+        @include flexbox (column, space-between, center, inherit);
+            background-color: $color-blanco;
+            border: 1px solid $color-gris;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 10px;
+
+        //Determino el tamaño de las imagenes de los productos//
+        img {
+            width: 150px;
+        }
+
+        //Aplico flex y centro los parrafos de los productos/
+        p {
+            @include flexbox (row, center, inherit, inherit);
+            text-align: center;
+        }
+
+        //Aplico estilo a los botones "COMPRAR" de las cards//
+        button {
+            background-color: $color-rojo;
+            border: none;
+            border-radius: 3px;
+            padding: 5px;
+            color: $color-blanco;
+
+            &:hover {
+                background-color: $color-boton-hover;
+            }
+        }
+    }
+}

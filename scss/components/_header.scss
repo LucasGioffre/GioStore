@@ -10,13 +10,13 @@
 }
 
 /*Aplico un fondo y agrego paddin en la parte de abajo cuando el navbar sea responsive*/
-.container-fluid {
+.contenedor {
     background-color: $color-negro;
     padding-bottom: 10px;
 }
 
 /*Aplico color blanco a los links del navbar*/
-.nav-link {
+.link {
     color: $color-blanco;
 
     &:hover {
@@ -37,7 +37,7 @@
 }
 
 /*Aplico hover al dropdown de categorias*/
-.dropdown-menu {
+.menu-desplegable {
     li {
         a {
             &:hover {

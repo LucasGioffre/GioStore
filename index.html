@@ -11,42 +11,41 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
+            <div class="container-fluid contenedor">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
                 </button>
                 <a class="navbar-brand" href="./index.html">
-                    <img id="logo" class="logo" src="./assets/img/giostore-logo-blanco.png" alt="logo">
+                    <img id="logo" class="logo" src="./assets/img/giostore-logo-blanco.png" alt="logo de la pagina GioStore">
                 </a>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <div class="dropdown">
-                                <a class="btn-secondary dropdown-toggle nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="btn-secondary dropdown-toggle nav-link link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Guitarras</a></li>
-                                    <li><a class="dropdown-item" href="#">Bajos</a></li>
-                                    <li><a class="dropdown-item" href="#">Baterias</a></li>
-                                    <li><a class="dropdown-item" href="#">Pianos</a></li>
-                                    <li><a class="dropdown-item" href="#">Teclados</a></li>
-                                    <li><a class="dropdown-item" href="#">Accesorios</a></li>
-                                    <li><a class="dropdown-item" href="#">Instrumentos de Viento</a></li>
+                                <ul class="dropdown-menu menu-desplegable">
+                                    <li><a class="dropdown-item" href="#guitarras">Guitarras</a></li>
+                                    <li><a class="dropdown-item" href="#bajos">Bajos</a></li>
+                                    <li><a class="dropdown-item" href="#baterias">Baterias</a></li>
+                                    <li><a class="dropdown-item" href="#pianos">Pianos y Teclados</a></li>
+                                    <li><a class="dropdown-item" href="#accesorios">Accesorios</a></li>
+                                    <li><a class="dropdown-item" href="#viento">Instrumentos de Viento</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/marcas.html">Marcas</a>
+                            <a class="nav-link link" href="./pages/marcas.html">Marcas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            <a class="nav-link link" href="./pages/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                            <a class="nav-link link" href="./pages/contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./pages/envios.html">Envio</a>
+                            <a class="nav-link link" href="./pages/envios.html">Envio</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -61,16 +60,16 @@
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./assets/img/bajofender-banner.jpg" class="d-block w-100" alt="bajo-banner">
+                    <img src="./assets/img/bajofender-banner.jpg" class="d-block w-100 w-banner" alt="banner de bajo electrico precision de la marca Squier by Fender">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/banner-bateria.png" class="d-block w-100" alt="bateria-banner">
+                    <img src="./assets/img/banner-bateria.png" class="d-block w-100 w-banner" alt="banner de redoblante y palillos de la marca Vic Firth">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/guitarra-banner.jpg" class="d-block w-100" alt="guitarra-banner">
+                    <img src="./assets/img/guitarra-banner.jpg" class="d-block w-100 w-banner" alt="banner de guitarra stratocaster violeta de la marca Squier by Fender">
                 </div>
                 <div class="carousel-item">
-                    <img src="./assets/img/piano-banner.jpg" class="d-block w-100" alt="piano-banner">
+                    <img src="./assets/img/piano-banner.jpg" class="d-block w-100 w-banner" alt="banner de teclado de la marca Kurzweil pc4">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -85,7 +84,7 @@
         <div class="info-container">
             <div class="garantia-container">
                 <p>Garantia Oficial</p>
-                <img src="./assets/img/garantia-logo.png" alt="garantia-logo">
+                <img src="./assets/img/garantia-logo.png" alt="imagen de garantia">
             </div>
             <div class="delivery-container">
                 <p>Envio gratis a partir de $25.000</p>
@@ -94,62 +93,271 @@
             <div class="cuotas-container">
                 <p>3, 6, 12 cuotas</p>
                 <div class="img-cuotas">
-                    <img class="tarjetas" src="./assets/img/tarjetas-logo.png" alt="tarjetas-logo">
-                    <img class="mercadopago" src="./assets/img/mercadopago-logo.png" alt="mercadopago-logo">
+                    <img class="tarjetas" src="./assets/img/tarjetas-logo.png" alt="imagen de tarjetas visa, mastercard y american express">
+                    <img class="mercadopago" src="./assets/img/mercadopago-logo.png" alt="imagen del logo de mercado pago">
                 </div>
             </div>
         </div>
-        <h1>Novedades</h1>
+        <h1>NOVEDADES</h1>
         <div class="novedades-container">
             <div class="prod-novedad prod1">
-                <img src="./assets/img/guitarra1.jpg" alt="guitarra1">
+                <img src="./assets/img/guitarra1.jpg" alt="guitarra Electrica Leonard - Stratocaster LE362BK">
                 <p>Guitarra Electrica Leonard - Stratocaster LE362BK</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod2">
-                <img src="./assets/img/guitarra2.jpg" alt="guitarra2">
+                <img src="./assets/img/guitarra2.jpg" alt="guitarra Electrica Leonard - Stratocaster LE362SB">
                 <p>Guitarra Electrica Leonard - Stratocaster LE362SB</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod3">
-                <img src="./assets/img/guitarra3.jpg" alt="guitarra3">
+                <img src="./assets/img/guitarra3.jpg" alt="guitarra Electrica Sx Ef3d Les Paul Ef3 Serie Mango Encolado EF3D-TWR">
                 <p>Guitarra Electrica Sx Ef3d Les Paul Ef3 Serie Mango Encolado EF3D-TWR</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod4">
-                <img src="./assets/img/guitarra4.webp" alt="guitarra4">
+                <img src="./assets/img/guitarra4.webp" alt="guitarra Electrica Ibanez Artcore Expressionist Sunburst">
                 <p>Guitarra Electrica Ibanez Artcore Expressionist Sunburst</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod5">
-                <img src="./assets/img/bajo1.jpg" alt="bajo1">
+                <img src="./assets/img/bajo1.jpg" alt="bajo Electrico Fender STANDARD Jazz Bass Mexico Artic White">
                 <p>Bajo Electrico Fender STANDARD Jazz Bass Mexico Artic White</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod6">
-                <img src="./assets/img/bajo2.jpg" alt="bajo2">
+                <img src="./assets/img/bajo2.jpg" alt="bajo Ibanez De 5 Cuerdas Sr655-Abs">
                 <p>Bajo Ibanez De 5 Cuerdas Sr655-Abs</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod7">
-                <img src="./assets/img/piano1.webp" alt="piano1">
+                <img src="./assets/img/piano1.webp" alt="sintetizador Yamaha Montage M7 De 76 Teclas">
                 <p>Sintetizador Yamaha Montage M7 De 76 Teclas</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod8">
-                <img src="./assets/img/piano2.jpg" alt="piano2">
+                <img src="./assets/img/piano2.jpg" alt="piano Hibrido Casio GP310 Celviano Grand Hybrid 88 Teclas De Marfil Acción Martillo">
                 <p>Piano Hibrido Casio GP310 Celviano Grand Hybrid 88 Teclas De Marfil Acción Martillo</p>
                 <button>COMPRAR</button>
             </div>
             <div class="prod-novedad prod9">
-                <img src="./assets/img/bateria1.webp" alt="bateria1">
+                <img src="./assets/img/bateria1.webp" alt="bateria Pearl Export 5 Cuerpos Bombo 22 Color Graphite Silver Twist">
                 <p>Bateria Pearl Export 5 Cuerpos Bombo 22" Color Graphite Silver Twist</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h2 class="titulo-categorias">CATEGORIAS</h2>
+        <h3 id="guitarras" class="subtitulo-categorias">Guitarras</h3>
+        <div class="guitarras-container">
+            <div class="prod-guitarras guitar1">
+                <img src="./assets/img/seccion-guitarras1.jpg" alt="guitarra Electrica Ibanez Grx40ca Serie Gio Candy Apple">
+                <p>Guitarra Electrica Ibanez Grx40ca Serie Gio Candy Apple</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar2">
+                <img src="./assets/img/seccion-guitarras2.jpg" alt="guitarra Sx Ef3d-cs Ef3 Series Lp Rw Mango Encolado">
+                <p>Guitarra Sx Ef3d-cs Ef3 Series Lp Rw Mango Encolado</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar3">
+                <img src="./assets/img/seccion-guitarras3.jpg" alt="guitarra Elec Cort Cr250vb H-h T/lp Std Set-in Vintage Brown">
+                <p>Guitarra Elec Cort Cr250vb H-h T/lp Std Set-in Vintage Brown</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar4">
+                <img src="./assets/img/seccion-guitarras4.jpg" alt="guitarra Electrica EpiPhone Les Paul Special Tv Yellow">
+                <p>Guitarra Electrica EpiPhone Les Paul Special Tv Yellow</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar5">
+                <img src="./assets/img/seccion-guitarras5.jpg" alt="guitarra Electrica EpiPhone Les Paul Classic Color Negra">
+                <p>Guitarra Electrica EpiPhone Les Paul Classic Color Negra</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar6">
+                <img src="./assets/img/seccion-guitarras6.jpg" alt="guitarra Electrica Esp Ltd Ec401 Ow Eclipse Emg Blanca">
+                <p>Guitarra Electrica Esp Ltd Ec401 Ow Eclipse Emg Blanca</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-guitarras guitar7">
+                <img src="./assets/img/seccion-guitarras7.jpg" alt="guitarra Fender 014-9912-372 Stratocaster Vintera Series 50">
+                <p>Guitarra Fender 014-9912-372 Stratocaster Vintera Series 50</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h3 id="bajos" class="subtitulo-categorias">Bajos</h3>
+        <div class="bajos-container">
+            <div class="prod-bajos bajo1">
+                <img src="./assets/img/seccion-bajos1.jpg" alt="bajo Eléctrico Leonard Precision Lb252bk Color Negro">
+                <p>Bajo Eléctrico Leonard Precision Lb252bk Color Negro</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo2">
+                <img src="./assets/img/seccion-bajos2.jpg" alt="bajo Cort Action Pj Opb Action Precision Jazz, Color Negro">
+                <p>Bajo Cort Action Pj Opb Action Precision Jazz, Color Negro</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo3">
+                <img src="./assets/img/seccion-bajos3.jpg" alt="bajo Electrico Ibanez Gsr180bem 4 Cuerdas Blue Metallic">
+                <p>Bajo Electrico Ibanez Gsr180bem 4 Cuerdas Blue Metallic</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo4">
+                <img src="./assets/img/seccion-bajos4.jpg" alt="bajo Electrico Yamaha Trbx305 Serie Rbx De 5 Cuerdas">
+                <p>Bajo Electrico Yamaha Trbx305 Serie Rbx De 5 Cuerdas</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo5">
+                <img src="./assets/img/seccion-bajos5.jpg" alt="bajo Electrico Fender 014-6203-532 Jazz Bass Standard Mexico">
+                <p>Bajo Electrico Fender 014-6203-532 Jazz Bass Standard Mexico</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo6">
+                <img src="./assets/img/seccion-bajos6.jpg" alt="bajo Stagg Bc300sb Bajo Fusion 1 Mic Jb 1 Mic Pb Sunburst">
+                <p>Bajo Stagg Bc300sb Bajo Fusion 1 Mic Jb 1 Mic Pb Sunburst</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-bajos bajo7">
+                <img src="./assets/img/seccion-bajos7.jpg" alt="bajo Ibanez Gsr200pw Serie Gsr 4 Cuerdas Pearl White">
+                <p>Bajo Ibanez Gsr200pw Serie Gsr 4 Cuerdas Pearl White</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h3 id="baterias" class="subtitulo-categorias">Baterias</h3>
+        <div class="baterias-container">
+            <div class="prod-baterias bat1">
+                <img src="./assets/img/seccion-baterias1.jpg" alt="bateria Yamaha Rdp0f5bgg Serie Rydeen Bordo Sin Fierros">
+                <p>Bateria Yamaha Rdp0f5bgg Serie Rydeen Bordo Sin Fierros</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-baterias bat2">
+                <img src="./assets/img/seccion-baterias2.jpg" alt="bateria Acustica Mapex Ve5294ftvc Venus Steel Blue Metallic">
+                <p>Bateria Acustica Mapex Ve5294ftvc Venus Steel Blue Metallic</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-baterias bat3">
+                <img src="./assets/img/seccion-baterias3.jpg" alt="bateria Yamaha Rdp2f5sLG Serie Rydeen Gris Sin Fierros">
+                <p>Bateria Yamaha Rdp2f5sLG Serie Rydeen Gris Sin Fierros</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-baterias bat4">
+                <img src="./assets/img/seccion-baterias4.jpg" alt="bateria Tama Vd36mwsvbg Silverstar 16+10+13 Vintage Burgundy">
+                <p>Bateria Tama Vd36mwsvbg Silverstar 16+10+13 Vintage Burgundy</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-baterias bat5">
+                <img src="./assets/img/seccion-baterias5.jpg" alt="bateria Electronica 5 Cuerpos Platillos Alesis Crimson Ii">
+                <p>Bateria Electronica 5 Cuerpos Platillos Alesis Crimson Ii</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h3 id="pianos" class="subtitulo-categorias">Pianos y Teclados</h3>
+        <div class="pianos-container">
+            <div class="prod-piano piano1">
+                <img src="./assets/img/seccion-pianos1.jpg" alt="piano Digital Artesia Pa88h 88 Teclas 16 Voces Reverb Usb">
+                <p>Piano Digital Artesia Pa88h 88 Teclas 16 Voces Reverb Usb</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-piano piano2">
+                <img src="./assets/img/seccion-pianos2.jpg" alt="piano Digital Kurzweil Ka70 88 Notas 128 Voces Negro">
+                <p>Piano Digital Kurzweil Ka70 88 Notas 128 Voces Negro</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-piano piano3">
+                <img src="./assets/img/seccion-pianos3.jpg" alt="piano Kurzweil M230sr Electrico 88 Notas Con Mueble">
+                <p>Piano Kurzweil M230sr Electrico 88 Notas Con Mueble</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-piano piano4">
+                <img src="./assets/img/seccion-pianos4.jpg" alt="piano Yamaha Arius Ydp105 Digital 88-key 10 Voces">
+                <p>Piano Yamaha Arius Ydp105 Digital 88-key 10 Voces</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-piano piano5">
+                <img src="./assets/img/seccion-pianos5.jpg" alt="piano Electronico Yamaha P145 De 88 Teclas">
+                <p>Piano Electronico Yamaha P145 De 88 Teclas</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="prod-piano piano6">
+                <img src="./assets/img/seccion-pianos6.jpg" alt="piano Digital Ringway Rp-120 88 Teclas C/mueble">
+                <p>Piano Digital Ringway Rp-120 88 Teclas C/mueble</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h3 id="accesorios" class="subtitulo-categorias">Accesorios</h3>
+        <div class="accesorios-container">
+            <div class="acces-prod acces1">
+                <img src="./assets/img/seccion-accesorios1.jpg" alt="metronomo + Afinador Cromático Joyo Jmt9000b">
+                <p>Metronomo + Afinador Cromático Joyo Jmt9000b</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces2">
+                <img src="./assets/img/seccion-accesorios2.jpg" alt="afinador Cromatico Korg Rimpitch Rp-c1 P/ Guitarra Acustica">
+                <p>Afinador Cromatico Korg Rimpitch Rp-c1 P/ Guitarra Acustica</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces3">
+                <img src="./assets/img/seccion-accesorios3.jpg" alt="capotraste Guitto Ggc-06 De Clasica Aluminio Para Guitarra">
+                <p>Capotraste Guitto Ggc-06 De Clasica Aluminio Para Guitarra</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces4">
+                <img src="./assets/img/seccion-accesorios4.jpg" alt="capotraste G7th Newport Chrome Guitarra 6 Cuerdas Cromado">
+                <p>Capotraste G7th Newport Chrome Guitarra 6 Cuerdas Cromado</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces5">
+                <img src="./assets/img/seccion-accesorios5.jpg" alt="correa Tijuana Eco-jd Eco Jack Daniels P/ Guitarra">
+                <p>Correa Tijuana Eco-jd Eco Jack Daniels P/ Guitarra</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces6">
+                <img src="./assets/img/seccion-accesorios6.jpg" alt="correa Tijuana Eco-st Eco Stones Guitarra Bajo">
+                <p>Correa Tijuana Eco-st Eco Stones Guitarra Bajo</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="acces-prod acces7">
+                <img src="./assets/img/seccion-accesorios7.jpg" alt="pack X6 Puas Jim Dunlop 450r 2.00 Delrin 500 Prime Grip Bk">
+                <p>Pack X6 Puas Jim Dunlop 450r 2.00 Delrin 500 Prime Grip Bk</p>
+                <button>COMPRAR</button>
+            </div>
+        </div>
+        <h3 id="viento" class="subtitulo-categorias">Instrumentos de Viento</h3>
+        <div class="viento-container">
+            <div class="viento-prod viento1">
+                <img src="./assets/img/seccion-viento1.jpg" alt="trompeta Stagg Ws Tr115 - Con Estuche Abs">
+                <p>Trompeta Stagg Ws Tr115 - Con Estuche Abs</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="viento-prod viento2">
+                <img src="./assets/img/seccion-viento2.jpg" alt="trompeta Gala Tr1400 Campana De Una Pieza+ Estuche Dorado">
+                <p>Trompeta Gala Tr1400 Campana De Una Pieza+ Estuche Dorado</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="viento-prod viento3">
+                <img src="./assets/img/seccion-viento3.jpg" alt="saxo Alto Clef Gold 150 Con Estuche,boquilla Y Accesorios">
+                <p>Saxo Alto Clef Gold 150 Con Estuche,boquilla Y Accesorios</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="viento-prod viento4">
+                <img src="./assets/img/seccion-viento4.jpg" alt="flauta Traversa Con Estuche Yamaha Yfl 222">
+                <p>Flauta Traversa Con Estuche Yamaha Yfl 222</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="viento-prod viento5">
+                <img src="./assets/img/seccion-viento5.jpg" alt="armonica Hohner Big River Harp C/ Estuche F Fa">
+                <p>Armonica Hohner Big River Harp C/ Estuche F Fa</p>
+                <button>COMPRAR</button>
+            </div>
+            <div class="viento-prod viento6">
+                <img src="./assets/img/seccion-viento6.jpg" alt="clarinete Stagg 77c Con Estuche Y Boquilla">
+                <p>Clarinete Stagg 77c Con Estuche Y Boquilla</p>
                 <button>COMPRAR</button>
             </div>
         </div>
         <div class="whatsapp-container">
             <a href="#">
-                <img src="./assets/img/whatsapp-logo.png" alt="whatsapp-logo">
+                <img src="./assets/img/whatsapp-logo.png" alt="imagen del logo de whatsapp">
             </a>
         </div>
     </main>

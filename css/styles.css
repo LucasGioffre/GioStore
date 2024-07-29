@@ -45,16 +45,16 @@ body {
 }
 
 /*Aplico un fondo y agrego paddin en la parte de abajo cuando el navbar sea responsive*/
-.container-fluid {
+.contenedor {
   background-color: black;
   padding-bottom: 10px;
 }
 
 /*Aplico color blanco a los links del navbar*/
-.nav-link {
+.link {
   color: white;
 }
-.nav-link:hover {
+.link:hover {
   color: #d42020;
 }
 
@@ -70,7 +70,7 @@ body {
 }
 
 /*Aplico hover al dropdown de categorias*/
-.dropdown-menu li a:hover {
+.menu-desplegable li a:hover {
   background-color: #d42020;
   color: white;
 }
@@ -154,7 +154,7 @@ footer i {
 }
 
 /*Le aplico tamaño a las imagenes de los banners*/
-.w-100 {
+.w-banner {
   width: 100%;
   height: 400px;
 }
@@ -220,15 +220,36 @@ h1 {
   flex-wrap: inherit;
 }
 
+/*Aplico flex y margen al titulo de Categorias*/
+.titulo-categorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  margin-top: 20px;
+}
+
+/*Aplico flex y margen a los subtitulos de la seccion de Categorias*/
+.subtitulo-categorias {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: inherit;
+  flex-wrap: inherit;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
 /*Aplico grid y declaro la posicion de los productos de novevades*/
 .novedades-container {
   display: grid;
-  grid-template-columns: repeat(5 250px);
-  grid-template-rows: repeat(3 350px);
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10" "prod11 prod12 prod13 prod14 prod15";
+  grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9";
 }
 .novedades-container .prod-novedad {
   display: flex;
@@ -261,6 +282,270 @@ h1 {
   color: white;
 }
 .novedades-container .prod-novedad button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de guitarras*/
+.guitarras-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "guitar1 guitar2 guitar3 guitar4 guitar5" "guitar6 guitar7";
+}
+.guitarras-container .prod-guitarras {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.guitarras-container .prod-guitarras img {
+  width: 150px;
+}
+.guitarras-container .prod-guitarras p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.guitarras-container .prod-guitarras button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.guitarras-container .prod-guitarras button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de bajos*/
+.bajos-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "bajo1 bajo2 bajo3 bajo4 bajo5" "bajo6 bajo7";
+}
+.bajos-container .prod-bajos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.bajos-container .prod-bajos img {
+  width: 150px;
+}
+.bajos-container .prod-bajos p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.bajos-container .prod-bajos button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.bajos-container .prod-bajos button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de baterias*/
+.baterias-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: 350px;
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "bat1 bat2 bat3 bat4 bat5";
+}
+.baterias-container .prod-baterias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.baterias-container .prod-baterias img {
+  width: 150px;
+}
+.baterias-container .prod-baterias p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.baterias-container .prod-baterias button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.baterias-container .prod-baterias button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de pianos y teclados*/
+.pianos-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "piano1 piano2 piano3 piano4 piano5" "piano6";
+}
+.pianos-container .prod-piano {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.pianos-container .prod-piano img {
+  width: 150px;
+}
+.pianos-container .prod-piano p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.pianos-container .prod-piano button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.pianos-container .prod-piano button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de accesorios*/
+.accesorios-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "acces1 acces2 acces3 acces4 acces5" "acces6 acces7";
+}
+.accesorios-container .acces-prod {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.accesorios-container .acces-prod img {
+  width: 150px;
+}
+.accesorios-container .acces-prod p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.accesorios-container .acces-prod button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.accesorios-container .acces-prod button:hover {
+  background-color: #d66b6b;
+}
+
+/*Aplico grid y declaro la posicion de los productos de la seccion Categorias de instrumentos de viento*/
+.viento-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  grid-template-rows: repeat(2, 350px);
+  gap: 5px;
+  justify-content: center;
+  align-items: stretch;
+  grid-template-areas: "viento1 viento2 viento3 viento4 viento6" "viento6";
+}
+.viento-container .viento-prod {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: inherit;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+.viento-container .viento-prod img {
+  width: 150px;
+}
+.viento-container .viento-prod p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: inherit;
+  flex-wrap: inherit;
+  text-align: center;
+}
+.viento-container .viento-prod button {
+  background-color: #d42020;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  color: white;
+}
+.viento-container .viento-prod button:hover {
   background-color: #d66b6b;
 }
 
@@ -542,7 +827,7 @@ h1 {
 
 @media screen and (max-width: 500px) {
   /*-------PAGINA INDEX---------*/
-  .w-100 {
+  .w-banner {
     width: 100%;
     height: 250px;
   }
