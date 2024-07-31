@@ -87,6 +87,7 @@ h1 {
         border-radius: 20px;
         padding: 10px;
         margin: 10px;
+        transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos de novedades//
         img {
@@ -110,6 +111,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -166,6 +171,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -189,6 +195,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -236,6 +246,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -259,6 +270,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -306,6 +321,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -329,6 +345,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -369,6 +389,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -392,6 +413,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -436,6 +461,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -459,6 +485,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
@@ -507,6 +537,7 @@ h1 {
             border-radius: 20px;
             padding: 10px;
             margin: 10px;
+            transition: 0.3s;
 
         //Determino el tamaño de las imagenes de los productos//
         img {
@@ -530,6 +561,10 @@ h1 {
             &:hover {
                 background-color: $color-boton-hover;
             }
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 
