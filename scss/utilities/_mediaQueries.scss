@@ -16,12 +16,70 @@
     }
 
     .novedades-container {
-        @include grid (repeat(2 50px), repeat(4 150px), inherit, inherit, inherit);
+        @include grid (repeat(2, 200px), repeat(5, 350px), inherit, center, inherit);
         grid-template-areas:
         "prod1 prod2"
         "prod3 prod4"
         "prod5 prod6"
-        "prod7 prod8";
+        "prod7 prod8"
+        "prod9 prod10";
+    }
+
+    .subtitulo-categorias {
+        @include flexbox (row, center, inherit, inherit);
+        margin-left: 0;
+    }
+
+    .guitarras-container {
+        @include grid (repeat(2, 200px), repeat(4, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "guitar1 guitar2"
+        "guitar3 guitar4"
+        "guitar5 guitar6"
+        "guitar7 guitar8";
+    }
+
+    .bajos-container {
+        @include grid (repeat(2, 200px), repeat(4, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "bajo1 bajo2"
+        "bajo3 bajo4"
+        "bajo5 bajo6"
+        "bajo7 bajo8";
+    }
+
+    .baterias-container {
+        @include grid (repeat(2, 200px), repeat(3, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "bat1 bat2"
+        "bat3 bat4"
+        "bat5 bat6";
+    }
+
+
+    .pianos-container {
+        @include grid (repeat(2, 200px), repeat(3, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "piano1 piano2"
+        "piano3 piano4"
+        "piano5 piano6";
+    }
+
+    .accesorios-container {
+        @include grid (repeat(2, 200px), repeat(4, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "acces1 acces2"
+        "acces3 acces4"
+        "acces5 acces6"
+        "acces7 acces8";
+    }
+
+    .viento-container {
+        @include grid (repeat(2, 200px), repeat(3, 350px), inherit, center, stretch);
+        grid-template-areas:
+        "viento1 viento2"
+        "viento3 viento4"
+        "viento5 viento6";
     }
 
     footer {
@@ -95,8 +153,6 @@
 
     .contact-container {
         @include grid (100%, 150px 100px 300px 350px, inherit, inherit, inherit);
-        /* grid-template-columns: 100%;
-        grid-template-rows: 150px 100px 300px 350px; */
 
         .telefonos {
             grid-column: 1/1;

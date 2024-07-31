@@ -77,7 +77,7 @@ h1 {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "prod1 prod2 prod3 prod4 prod5"
-    "prod6 prod7 prod8 prod9";
+    "prod6 prod7 prod8 prod9 prod10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .prod-novedad {
@@ -112,6 +112,43 @@ h1 {
             }
         }
     }
+
+    .prod1 {
+        grid-area: prod1;
+    }
+
+    .prod2 {
+        grid-area: prod2;
+    }
+
+    .prod3 {
+        grid-area: prod3;
+    }
+
+    .prod4 {
+        grid-area: prod4;
+    }
+
+    .prod5 {
+        grid-area: prod5;
+    }
+
+    .prod6 {
+        grid-area: prod6;
+    }
+
+    .prod7 {
+        grid-area: prod7;
+    }
+
+    .prod8 {
+        grid-area: prod8;
+    }
+
+    .prod9 {
+        grid-area: prod9;
+    }
+
  }
 
  /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de guitarras*/
@@ -119,7 +156,7 @@ h1 {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "guitar1 guitar2 guitar3 guitar4 guitar5"
-    "guitar6 guitar7";
+    "guitar6 guitar7 guitar8 guitar9 guitar10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .prod-guitarras {
@@ -154,6 +191,34 @@ h1 {
             }
         }
     }
+
+    .guitar1 {
+        grid-area: guitar1;
+    }
+
+    .guitar2 {
+        grid-area: guitar2;
+    }
+
+    .guitar3 {
+        grid-area: guitar3;
+    }
+
+    .guitar4 {
+        grid-area: guitar4;
+    }
+
+    .guitar5 {
+        grid-area: guitar5;
+    }
+
+    .guitar6 {
+        grid-area: guitar6;
+    }
+
+    .guitar7 {
+        grid-area: guitar7;
+    }
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de bajos*/
@@ -161,7 +226,7 @@ h1 {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "bajo1 bajo2 bajo3 bajo4 bajo5"
-    "bajo6 bajo7";
+    "bajo6 bajo7 bajo8 bajo9 bajo10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .prod-bajos {
@@ -196,6 +261,35 @@ h1 {
             }
         }
     }
+
+    .bajo1 {
+        grid-area: bajo1;
+    }
+
+    .bajo2 {
+        grid-area: bajo2;
+    }
+
+    .bajo3 {
+        grid-area: bajo3;
+    }
+
+    .bajo4 {
+        grid-area: bajo4;
+    }
+
+    .bajo5 {
+        grid-area: bajo5;
+    }
+
+    .bajo6 {
+        grid-area: bajo6;
+    }
+
+    .bajo7 {
+        grid-area: bajo7;
+    }
+
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de baterias*/
@@ -237,6 +331,27 @@ h1 {
             }
         }
     }
+
+    .bat1 {
+        grid-area: bat1;
+    }
+
+    .bat2 {
+        grid-area: bat2;
+    }
+
+    .bat3 {
+        grid-area: bat3;
+    }
+
+    .bat4 {
+        grid-area: bat4;
+    }
+
+    .bat5 {
+        grid-area: bat5;
+    }
+
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de pianos y teclados*/
@@ -244,7 +359,7 @@ h1 {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "piano1 piano2 piano3 piano4 piano5"
-    "piano6";
+    "piano6 piano7 piano8 piano9 piano10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .prod-piano {
@@ -279,6 +394,31 @@ h1 {
             }
         }
     }
+
+    .piano1 {
+        grid-area: piano1;
+    }
+
+    .piano2 {
+        grid-area: piano2;
+    }
+
+    .piano3 {
+        grid-area: piano3;
+    }
+
+    .piano4 {
+        grid-area: piano4;
+    }
+
+    .piano5 {
+        grid-area: piano5;
+    }
+
+    .piano6 {
+        grid-area: piano6;
+    }
+
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de accesorios*/
@@ -286,7 +426,7 @@ h1 {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
     "acces1 acces2 acces3 acces4 acces5"
-    "acces6 acces7";
+    "acces6 acces7 acces8 acces9 acces10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .acces-prod {
@@ -321,14 +461,43 @@ h1 {
             }
         }
     }
+
+    .acces1 {
+        grid-area: acces1;
+    }
+
+    .acces2 {
+        grid-area: acces2;
+    }
+
+    .acces3 {
+        grid-area: acces3;
+    }
+
+    .acces4 {
+        grid-area: acces4;
+    }
+
+    .acces5 {
+        grid-area: acces5;
+    }
+
+    .acces6 {
+        grid-area: acces6;
+    }
+
+    .acces7 {
+        grid-area: acces7;
+    }
+
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de instrumentos de viento*/
 .viento-container {
     @include grid (repeat(5, 250px), repeat(2, 350px), 5px, center, stretch);
     grid-template-areas:
-    "viento1 viento2 viento3 viento4 viento6"
-    "viento6";
+    "viento1 viento2 viento3 viento4 viento5"
+    "viento6 viento7 viento8 viento9 viento10";
 
     //Aplico flex y establezco el estilo de cada card de productos//
     .viento-prod {
@@ -363,4 +532,29 @@ h1 {
             }
         }
     }
+
+    .viento1 {
+        grid-area: viento1;
+    }
+
+    .viento2 {
+        grid-area: viento2;
+    }
+
+    .viento3 {
+        grid-area: viento3;
+    }
+
+    .viento4 {
+        grid-area: viento4;
+    }
+
+    .viento5 {
+        grid-area: viento5;
+    }
+
+    .viento6 {
+        grid-area: viento6;
+    }
+
 }

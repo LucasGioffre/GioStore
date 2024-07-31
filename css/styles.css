@@ -249,7 +249,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9";
+  grid-template-areas: "prod1 prod2 prod3 prod4 prod5" "prod6 prod7 prod8 prod9 prod10";
 }
 .novedades-container .prod-novedad {
   display: flex;
@@ -284,6 +284,33 @@ h1 {
 .novedades-container .prod-novedad button:hover {
   background-color: #d66b6b;
 }
+.novedades-container .prod1 {
+  grid-area: prod1;
+}
+.novedades-container .prod2 {
+  grid-area: prod2;
+}
+.novedades-container .prod3 {
+  grid-area: prod3;
+}
+.novedades-container .prod4 {
+  grid-area: prod4;
+}
+.novedades-container .prod5 {
+  grid-area: prod5;
+}
+.novedades-container .prod6 {
+  grid-area: prod6;
+}
+.novedades-container .prod7 {
+  grid-area: prod7;
+}
+.novedades-container .prod8 {
+  grid-area: prod8;
+}
+.novedades-container .prod9 {
+  grid-area: prod9;
+}
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de guitarras*/
 .guitarras-container {
@@ -293,7 +320,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "guitar1 guitar2 guitar3 guitar4 guitar5" "guitar6 guitar7";
+  grid-template-areas: "guitar1 guitar2 guitar3 guitar4 guitar5" "guitar6 guitar7 guitar8 guitar9 guitar10";
 }
 .guitarras-container .prod-guitarras {
   display: flex;
@@ -328,6 +355,27 @@ h1 {
 .guitarras-container .prod-guitarras button:hover {
   background-color: #d66b6b;
 }
+.guitarras-container .guitar1 {
+  grid-area: guitar1;
+}
+.guitarras-container .guitar2 {
+  grid-area: guitar2;
+}
+.guitarras-container .guitar3 {
+  grid-area: guitar3;
+}
+.guitarras-container .guitar4 {
+  grid-area: guitar4;
+}
+.guitarras-container .guitar5 {
+  grid-area: guitar5;
+}
+.guitarras-container .guitar6 {
+  grid-area: guitar6;
+}
+.guitarras-container .guitar7 {
+  grid-area: guitar7;
+}
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de bajos*/
 .bajos-container {
@@ -337,7 +385,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "bajo1 bajo2 bajo3 bajo4 bajo5" "bajo6 bajo7";
+  grid-template-areas: "bajo1 bajo2 bajo3 bajo4 bajo5" "bajo6 bajo7 bajo8 bajo9 bajo10";
 }
 .bajos-container .prod-bajos {
   display: flex;
@@ -371,6 +419,27 @@ h1 {
 }
 .bajos-container .prod-bajos button:hover {
   background-color: #d66b6b;
+}
+.bajos-container .bajo1 {
+  grid-area: bajo1;
+}
+.bajos-container .bajo2 {
+  grid-area: bajo2;
+}
+.bajos-container .bajo3 {
+  grid-area: bajo3;
+}
+.bajos-container .bajo4 {
+  grid-area: bajo4;
+}
+.bajos-container .bajo5 {
+  grid-area: bajo5;
+}
+.bajos-container .bajo6 {
+  grid-area: bajo6;
+}
+.bajos-container .bajo7 {
+  grid-area: bajo7;
 }
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de baterias*/
@@ -416,6 +485,21 @@ h1 {
 .baterias-container .prod-baterias button:hover {
   background-color: #d66b6b;
 }
+.baterias-container .bat1 {
+  grid-area: bat1;
+}
+.baterias-container .bat2 {
+  grid-area: bat2;
+}
+.baterias-container .bat3 {
+  grid-area: bat3;
+}
+.baterias-container .bat4 {
+  grid-area: bat4;
+}
+.baterias-container .bat5 {
+  grid-area: bat5;
+}
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de pianos y teclados*/
 .pianos-container {
@@ -425,7 +509,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "piano1 piano2 piano3 piano4 piano5" "piano6";
+  grid-template-areas: "piano1 piano2 piano3 piano4 piano5" "piano6 piano7 piano8 piano9 piano10";
 }
 .pianos-container .prod-piano {
   display: flex;
@@ -460,6 +544,24 @@ h1 {
 .pianos-container .prod-piano button:hover {
   background-color: #d66b6b;
 }
+.pianos-container .piano1 {
+  grid-area: piano1;
+}
+.pianos-container .piano2 {
+  grid-area: piano2;
+}
+.pianos-container .piano3 {
+  grid-area: piano3;
+}
+.pianos-container .piano4 {
+  grid-area: piano4;
+}
+.pianos-container .piano5 {
+  grid-area: piano5;
+}
+.pianos-container .piano6 {
+  grid-area: piano6;
+}
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de accesorios*/
 .accesorios-container {
@@ -469,7 +571,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "acces1 acces2 acces3 acces4 acces5" "acces6 acces7";
+  grid-template-areas: "acces1 acces2 acces3 acces4 acces5" "acces6 acces7 acces8 acces9 acces10";
 }
 .accesorios-container .acces-prod {
   display: flex;
@@ -504,6 +606,27 @@ h1 {
 .accesorios-container .acces-prod button:hover {
   background-color: #d66b6b;
 }
+.accesorios-container .acces1 {
+  grid-area: acces1;
+}
+.accesorios-container .acces2 {
+  grid-area: acces2;
+}
+.accesorios-container .acces3 {
+  grid-area: acces3;
+}
+.accesorios-container .acces4 {
+  grid-area: acces4;
+}
+.accesorios-container .acces5 {
+  grid-area: acces5;
+}
+.accesorios-container .acces6 {
+  grid-area: acces6;
+}
+.accesorios-container .acces7 {
+  grid-area: acces7;
+}
 
 /*Aplico grid y declaro la posicion de los productos de la seccion Categorias de instrumentos de viento*/
 .viento-container {
@@ -513,7 +636,7 @@ h1 {
   gap: 5px;
   justify-content: center;
   align-items: stretch;
-  grid-template-areas: "viento1 viento2 viento3 viento4 viento6" "viento6";
+  grid-template-areas: "viento1 viento2 viento3 viento4 viento5" "viento6 viento7 viento8 viento9 viento10";
 }
 .viento-container .viento-prod {
   display: flex;
@@ -547,6 +670,24 @@ h1 {
 }
 .viento-container .viento-prod button:hover {
   background-color: #d66b6b;
+}
+.viento-container .viento1 {
+  grid-area: viento1;
+}
+.viento-container .viento2 {
+  grid-area: viento2;
+}
+.viento-container .viento3 {
+  grid-area: viento3;
+}
+.viento-container .viento4 {
+  grid-area: viento4;
+}
+.viento-container .viento5 {
+  grid-area: viento5;
+}
+.viento-container .viento6 {
+  grid-area: viento6;
 }
 
 /*Activo grid y declaro la estructura y medidas*/
@@ -842,12 +983,74 @@ h1 {
   }
   .novedades-container {
     display: grid;
-    grid-template-columns: repeat(2 50px);
-    grid-template-rows: repeat(4 150px);
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(5, 350px);
     gap: inherit;
-    justify-content: inherit;
+    justify-content: center;
     align-items: inherit;
-    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8";
+    grid-template-areas: "prod1 prod2" "prod3 prod4" "prod5 prod6" "prod7 prod8" "prod9 prod10";
+  }
+  .subtitulo-categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: inherit;
+    flex-wrap: inherit;
+    margin-left: 0;
+  }
+  .guitarras-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "guitar1 guitar2" "guitar3 guitar4" "guitar5 guitar6" "guitar7 guitar8";
+  }
+  .bajos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "bajo1 bajo2" "bajo3 bajo4" "bajo5 bajo6" "bajo7 bajo8";
+  }
+  .baterias-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "bat1 bat2" "bat3 bat4" "bat5 bat6";
+  }
+  .pianos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "piano1 piano2" "piano3 piano4" "piano5 piano6";
+  }
+  .accesorios-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(4, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "acces1 acces2" "acces3 acces4" "acces5 acces6" "acces7 acces8";
+  }
+  .viento-container {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    grid-template-rows: repeat(3, 350px);
+    gap: inherit;
+    justify-content: center;
+    align-items: stretch;
+    grid-template-areas: "viento1 viento2" "viento3 viento4" "viento5 viento6";
   }
   footer {
     display: grid;
@@ -915,8 +1118,6 @@ h1 {
     gap: inherit;
     justify-content: inherit;
     align-items: inherit;
-    /* grid-template-columns: 100%;
-    grid-template-rows: 150px 100px 300px 350px; */
   }
   .contact-container .telefonos {
     grid-column: 1/1;
